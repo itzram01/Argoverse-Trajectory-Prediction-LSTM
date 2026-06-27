@@ -5,7 +5,7 @@
 ![Argoverse](https://img.shields.io/badge/Dataset-Argoverse_v1.1-blue?style=for-the-badge)
 
 ## 📌 Strategic Overview
-Trajectory prediction is a cornerstone of Autonomous Vehicle software architecture. This repository contains **Phase 1** of an end-to-end trajectory forecasting pipeline built on the Argoverse dataset. The objective is to predict the surrounding vehicles(gents) motion forecasting.
+Trajectory prediction is a cornerstone of Autonomous Vehicle software architecture. This repository contains **Phase 1** of an end-to-end trajectory forecasting pipeline built on the Argoverse dataset. The objective is to predict the surrounding vehicles(Agents) motion.
 
 In phase 1, the target is to establish a robust mathematical and data-engineering foundation—solving for spatial coordinate normalization, resolving heavy I/O bottlenecks, and establishing a Sequence-to-Vector LSTM baseline to evaluate geometric displacement errors.
 
