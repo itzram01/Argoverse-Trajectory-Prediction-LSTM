@@ -44,8 +44,8 @@ When the vehicle transitions into a sharp, non-linear turn, the model captures t
 
 1. Environment Setup
 
-_pip install -r requirements.txt
-git clone [https://github.com/YOUR-USERNAME/Argoverse-Trajectory-Prediction-LSTM.git](https://github.com/YOUR-USERNAME/Argoverse-Trajectory-Prediction-LSTM.git)_
+_pip install -r requirements.txt_
+_git clone [https://github.com/YOUR-USERNAME/Argoverse-Trajectory-Prediction-LSTM.git](https://github.com/YOUR-USERNAME/Argoverse-Trajectory-Prediction-LSTM.git)_
 
 3. Data Pre-processing (Vectorization)
 Convert raw Argoverse .csv tracks into optimized binary tensors:
