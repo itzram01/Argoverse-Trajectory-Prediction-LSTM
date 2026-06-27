@@ -44,24 +44,24 @@ When the vehicle transitions into a sharp, non-linear turn, the model captures t
 
 1. Environment Setup
 ```bash
-pip install -r requirements.txt
 git clone [https://github.com/YOUR-USERNAME/Argoverse-Trajectory-Prediction-LSTM.git](https://github.com/YOUR-USERNAME/Argoverse-Trajectory-Prediction-LSTM.git)
-
+pip install -r requirements.txt
+```
 3. Data Pre-processing (Vectorization)
 Convert raw Argoverse .csv tracks into optimized binary tensors:
 ```bash
 python scripts/preprocess_data.py
-
+```
 3. Training the Model
 Launch the training loop (configured for GPU execution by default):
 ```bash
 python scripts/train.py
-
+```
 4. Evaluation & Visualization
 Generate global coordinate plots against the validation/test splits:
 ```bash
 python scripts/test_and_visualize.py
-
+```
 🗺️ Roadmap: Phase 2
 To address the under-steering limitations observed in Phase 1, the next iteration of this architecture will focus on:
 
@@ -72,4 +72,4 @@ Spatial Conditioning: Extracting HD map features (lane centerlines, drivable are
 Multi-Modal Horizons: Implementing probability-weighted multi-path generation to account for intersection branching (e.g., turning left vs. going straight).
 
 📬 Contact
-Ramkumar Karunakaran https://www.linkedin.com/in/ramkumar6karuna/
+Ramkumar Karunakaran [Click here to see my LinkedIn](https://www.linkedin.com/in/ramkumar6karuna/)
