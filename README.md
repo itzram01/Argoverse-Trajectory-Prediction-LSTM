@@ -1,13 +1,13 @@
-# Autonomous Vehicle Trajectory Prediction: End-to-End Deep Learning Pipeline
+# Multi-Agent Motion Forecasting with LSTM
 
 ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![Argoverse](https://img.shields.io/badge/Dataset-Argoverse_v1.1-blue?style=for-the-badge)
 
 ## 📌 Strategic Overview
-Trajectory prediction is a cornerstone of Autonomous Vehicle software architecture. This repository contains **Phase 1** of an end-to-end trajectory forecasting pipeline built on the Argoverse dataset. 
+Trajectory prediction is a cornerstone of Autonomous Vehicle software architecture. This repository contains **Phase 1** of an end-to-end trajectory forecasting pipeline built on the Argoverse dataset. The objective is to predict the surrounding vehicles(gents) motion forecasting.
 
-The primary objective of this phase was to establish a robust mathematical and data-engineering foundation—solving for spatial coordinate normalization, resolving heavy I/O bottlenecks, and establishing a Sequence-to-Vector LSTM baseline to evaluate geometric displacement errors.
+In phase 1, the target is to establish a robust mathematical and data-engineering foundation—solving for spatial coordinate normalization, resolving heavy I/O bottlenecks, and establishing a Sequence-to-Vector LSTM baseline to evaluate geometric displacement errors.
 
 ## 🚀 Key Engineering Milestones
 
