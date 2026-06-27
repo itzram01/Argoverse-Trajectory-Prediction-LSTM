@@ -52,11 +52,13 @@ Convert raw Argoverse .csv tracks into optimized binary tensors:
 
 Bash
 python scripts/preprocess_data.py --source data/raw/train --dest data/tensors/train
+
 3. Training the Model
 Launch the training loop (configured for GPU execution by default):
 
 Bash
 python scripts/train.py 
+
 4. Evaluation & Visualization
 Generate global coordinate plots against the validation/test splits:
 
