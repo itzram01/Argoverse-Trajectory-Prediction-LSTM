@@ -1,0 +1,1 @@
+Please download the Argoverse 1 Motion Forecasting Dataset from https://www.argoverse.org/av1.html and keep the compressed files here

@@ -1,0 +1,10 @@
+data/tensors/
+data/raw/
+*.pt
+*.tar.gz
+*.csv
+__pycache__/
+.ipynb_checkpoints/
+plots_val/
+*.npy
+plots_test/
