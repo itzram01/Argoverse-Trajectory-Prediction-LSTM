@@ -42,12 +42,36 @@ When the vehicle transitions into a sharp, non-linear turn, the model captures t
 
 ## 💻 Installation & Usage
 
-### 1. Environment Setup
-Clone the repository and install the required dependencies:
-```bash
-git clone [https://github.com/YOUR-USERNAME/Argoverse-Trajectory-Prediction-LSTM.git](https://github.com/YOUR-USERNAME/Argoverse-Trajectory-Prediction-LSTM.git)
-cd Argoverse-Trajectory-Prediction-LSTM
+1. Environment Setup
+Bash
 pip install -r requirements.txt
 git clone [https://github.com/YOUR-USERNAME/Argoverse-Trajectory-Prediction-LSTM.git](https://github.com/YOUR-USERNAME/Argoverse-Trajectory-Prediction-LSTM.git)
+
+2. Data Pre-processing (Vectorization)
+Convert raw Argoverse .csv tracks into optimized binary tensors:
+
+Bash
+python scripts/preprocess_data.py --source data/raw/train --dest data/tensors/train
+3. Training the Model
+Launch the training loop (configured for GPU execution by default):
+
+Bash
+python scripts/train.py 
+4. Evaluation & Visualization
+Generate global coordinate plots against the validation/test splits:
+
+Bash
+python scripts/test_and_visualize.py
+🗺️ Roadmap: Phase 2
+To address the under-steering limitations observed in Phase 1, the next iteration of this architecture will focus on:
+
+True Seq2Seq Architecture: Transitioning from a flat linear projection to a Recurrent Decoder to maintain step-by-step geometric momentum.
+
+Spatial Conditioning: Extracting HD map features (lane centerlines, drivable area boundaries) and appending them to the latent context vector to anchor predictions to real-world topology.
+
+Multi-Modal Horizons: Implementing probability-weighted multi-path generation to account for intersection branching (e.g., turning left vs. going straight).
+
+📬 Contact
+Ramkumar Karunakaran https://www.linkedin.com/in/ramkumar6karuna/
 cd Argoverse-Trajectory-Prediction-LSTM
 pip install -r requirements.txt
